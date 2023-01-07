@@ -1,0 +1,232 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+:root{
+    --primary-color:rgb(233, 217, 197);
+    --dark: rgb(34, 34, 34);
+}
+
+*{
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body,
+section{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Secular One', sans-serif;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* font-size: 62.5%; */
+}
+
+.right-black-square{
+    background-color: rgb(23, 23, 23);
+    position: absolute;
+    top: -20vw;
+    left: 50vw;
+    width: 800px;
+    height: 650px;
+    /* z-index: -100; */
+}
+
+.header{
+    /* padding: 0.7rem 3rem; */
+    background-color: var(--primary-color);
+    position: relative;
+    width: 100vw;
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 3.5vw;
+}
+
+.navbar-brand-link{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.navbar-li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+}
+
+.nav-list-item{
+    position: relative;
+}
+
+.navbar-li a{
+    color: var(--primary-color);
+    text-decoration: none;
+    z-index: 1000;
+    letter-spacing: 0.1rem;
+    font-size: 1.2vw;
+}
+
+.landing-page-image-div{
+    /* position: absolute; */
+    width: 5vw;
+    /* height: 15vw; */
+    
+}
+
+.landing-page-image{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    /* width: 15vw; */
+    /* height: 15vw; */
+    border-radius: 10%;
+    width: 50%;
+}
+
+.big-landing-page-heading{
+    position: absolute;
+    letter-spacing: 0.2rem;
+    z-index: 999;
+    top: 30%;
+    left: 16.2%;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+
+.coloured-heading-text{
+    color: var(--primary-color);
+}
+
+.text-above-image{
+    /* font-family: 'Cookie', cursive; */
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: 20%;
+    left: 51%;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    /* font-size: 1.3vw; */
+}
+
+.menu-btn{
+    display: none;
+    
+}
+
+nav{
+    position: relative;
+}
+
+.temp-class-for-icons{
+    background-color: white;
+}
+
+#menu-btn{
+    display: none;
+}
+
+#search-btn{
+    width: 1.7vw;
+    -webkit-margin-end: 2rem;
+            margin-inline-end: 2rem;
+}
+
+@media (max-width:50rem) {
+
+    .navbar-li a{
+    display: none;
+    
+    }
+
+    #search-btn{
+        display: none;
+    }
+
+    #menu-btn{
+        display: block;
+        position: absolute;
+        margin-inline: 4rem;
+        top: 0.3rem;
+        color: white;
+        z-index: 999;
+    }
+
+    .landing-page-image{
+        position: absolute;
+        -o-object-fit: cover;
+           object-fit: cover;
+        /* text-align: center; */
+        top: 20%;
+        left: 10%;
+        /* width: 15vw; */
+        /* height: 15vw; */
+        border-radius: 10%;
+        width: 80%;
+        height: 70%;
+    }
+
+    .big-landing-page-heading{
+        position: absolute;
+        text-align: center;
+        width: 100px;
+        color: var(--primary-color);
+        letter-spacing: 0.2rem;
+        z-index: 999;
+        top: 35%;
+        left: 13.2%;
+        font-size: 3.5rem;
+        font-weight: bold;
+        line-height: 4rem;
+    }
+
+    .text-above-image{
+        /* font-family: 'Cookie', cursive; */
+        font-family: 'Handlee', cursive;
+        position: absolute;
+        top: 11%;
+        left: 52.5%;
+        color: var(--primary-color);
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+        /* font-size: 1.3vw; */
+    }
+
+}
+
+/* Content Section  ----------------- */
+
+.content-section{
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 100vh;
+}
