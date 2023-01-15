@@ -4,59 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIMB</title>
+    <meta name="description" content="A podcast that covers ghe beautiful aspects of India">
+    <meta name="keywords" content="India, podcast, blog, podcasts on inida, amazing facts about india, facts on india">
+    <meta name="author" content="TIMB">
+    <title>TIMB | Podcast | Blog</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <header class="header">
 
-    <!-- <svg
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px" y="0px"
-    width="50" height="50"
-    viewBox="0 0 172 172"
-    style=" fill:#26e07f;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#1fb141"><path d="M21.5,21.5v129h64.5v-32.25v-64.5v-32.25zM86,53.75c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25c-17.7805,0 -32.25,14.4695 -32.25,32.25zM118.25,86c-17.7805,0 -32.25,14.4695 -32.25,32.25c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25z"></path></g></g></svg>
-     -->
-
-     
-     <!-- <section class="landing-page"> -->
-         <header class="header">
-
-             
-             <div class="right-black-square"></div>
-    <div class="navbar">
-                 
-    <div class="navbar-brand"><a class="navbar-brand-link" href="">TIMB</a></div>
-                 
-        <nav id="primary-navbar" data-visible="false">
-            
-            <img id="menu-btn" src="images/menu-icon.svg" alt="">
-            
-            <ul class="navbar-li">
-                <li class="nav-list-item"><a class="nav-links" href="#">Podcast</a></li>
-                <li class="nav-list-item"><a class="nav-links" href="#">Blog</a></li>
-                <li class="nav-list-item"><a class="nav-links" href="#">Subscribe</a></li> 
-                <li class="nav-list-item"><a class="nav-links" href="#">About Us</a></li>
-                <img id="search-btn" src="images/search-btn.svg" alt="">
+        <div class="social-media-icons">
+            <ul class="media-icon-ul">
+                <li class="media-icon"><a href="#" class="icon-link"><img src="images/linkedin.svg" alt=""></a></li>
+                <li class="media-icon"><a href="#" class="icon-link"><img src="images/instagram.svg" alt=""></a></li>
+                <li class="media-icon"><a href="#" class="icon-link"><img src="images/spotify.svg" alt=""></a></li>
+                <li class="media-icon"><a href="#" class="icon-link"><img src="images/media-icon.svg" alt=""></a></li>
             </ul>
+        </div>
+        
+        <!-- <section> -->
+        <div class="flex-container">
+        
+            <div class="brand-menu">
+                <img id="menu-toggle-btn" src="images/Vector.svg" alt="Munu Toggle" data-menu-toggle>
+                <div class="navbar-brand" style="display:inline;">TIMB</div>
+            </div>
 
-        </nav>
+            <div class="close-btn-img">
+                <img class="close-btn" id="close-btn" src="images/cancel.png" alt="" data-close-btn>
+            </div>
 
+            <!-- <div class="search-btn-img"> -->
+                <img class="search-btn" id="search-btn" src="images/search-button.svg" alt="">
+                <!-- </div> -->
+            
+            <nav class="navbar">
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="#main" class="nav-links">Podcast</a></li>
+                    <li class="nav-item"><a href="#main" class="nav-links">Blog</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-links">Subscribe</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-links">About Us</a></li>
+                    <li><input class="search-input" type="text"><img class="phone-search-btn search-wide-screen-visibility" src="images/search-btn.svg" alt=""><input class="search-input" type="text"></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="black-box-wrapper">
+        <div class="black-box"></div>
     </div>
 
-    <div class="landing-page-image-div">
-        <div class="big-landing-page-heading">THE <span class="coloured-heading-text">INDIA</span><br>I'M <span class="coloured-heading-text coloured-heading-text-shifted">BUILDING</span></div>
-        <img class="landing-page-image" src="images/india-rural-economy.webp" alt="A group of Indian men and women working on a farm with a tractor.">
-        <h3 class="text-above-image">Conversations bringing change.</h3>
+        <h1 class="home-page-title"><strong><span class="dark-text">the</span> india <br> <span class="dark-text nbsp">i'm</span>&nbsp; building</strong></h1>
+
+        <h3 class="text-above-img">conversations bringing change</h3>
+
+    <div class="home-page-img">
+        <img class="big-img" src="images/rural-women.png" alt="">
     </div>
 
+        <!-- </section> -->
 
     </header>
-<!-- </section> -->
-<main>
-    <section class="content-section">
-        <h2><a href="#">Podcasts</a><a href="#">Blog</a></h2>
-    </section>
+
+    <!-- ------------------------------ MAIN SECTION----------------------------- -->
+
+    <main class="main" id="main">
+
+        <div class="main-heading main-heading-pod"><strong>Podcasts</strong> &nbsp;</div>
+        <div class="main-heading main-heading-blog"><strong>Blog</strong></div>
+
+    <div class="main-flex-container">
+
+        <!-- ----------------------- PODCAST CARDS------------------------------- -->
+
+    <div class="podcast-card-container" id="podcast">
+        <div class="podcast-card">
+            <img class="card-img" src="images/card-img.png" alt="">
+                <article class="podcast-content">
+                    <h3>No one shall be subjected to arbitrary</h3>
+                    <p>No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and im.</p>
+                </article>
+        </div>
+
+        <div class="podcast-card">
+            <img class="card-img" src="images/card-img.png" alt="">
+                <article class="podcast-content">
+                    <h3>No one shall be subjected to arbitrary</h3>
+                    <p>No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and im.</p>
+                </article>
+        </div>
+
+        <div class="podcast-card">
+            <img class="card-img" src="images/card-img.png" alt="">
+                <article class="podcast-content">
+                    <h3>No one shall be subjected to arbitrary</h3>
+                    <p>No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and im.</p>
+                </article>
+        </div>
+
+        <div class="podcast-card">
+            <img class="card-img" src="images/card-img.png" alt="">
+                <article class="podcast-content">
+                    <h3>No one shall be subjected to arbitrary</h3>
+                    <p>No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and im.</p>
+                </article>
+        </div>
+
+    </div>
+
+    <!-- ------------------------------ BLOG CARDS------------------------------- -->
+
+    <div class="blog-card-container" id="blog">
+
+        <div class="blog-card">
+            <img src="images/blog-img.png" alt="" class="blog-card-img">
+            <!-- <h3>One Health: Future of health tech</h3> -->
+        </div>
+        <div class="blog-card">
+            <img src="images/blog-img.png" alt="" class="blog-card-img">
+            <!-- <h3>One Health: Future of health tech</h3> -->
+        </div>
+        <div class="blog-card">
+            <img src="images/blog-img.png" alt="" class="blog-card-img">
+            <!-- <h3>One Health: Future of health tech</h3> -->
+        </div>
+        <div class="blog-card">
+            <img src="images/blog-img.png" alt="" class="blog-card-img">
+            <!-- <h3>One Health: Future of health tech</h3> -->
+        </div>
+
+    </div>
+
+    </div>
 </main>
+
+    <section class="interview-section">
+        <div class="interview-content-wrapper">
+
+            <img class="interview-img" src="images/main-img.png" alt="">
+
+            <article class="interview-content">
+                <div class="big-interview-heading"><strong>One Health:<br>Future of health tech</strong></div>
+                <p>No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him. No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.</p>
+
+                <button class="interview-section-btn">Listen Now</button>
+            </article>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+
+    <div class="footer-flex-container">
+        
+        <div class="left-links">
+            <ul class="footer-ul left-ul-1">
+                <li class="left-list-items list-heading"><strong>Navigation</strong></li>
+                <li class="list-items"><a href="#" class="footer-links">Home</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Blog</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Episodes</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Subscribe</a></li>
+            </ul>
+
+            <ul class="footer-ul left-ul-2">
+                <li class="left-list-items list-heading"><strong>Our Socials</strong></li>
+                <li class="list-items"><a href="#" class="footer-links">Home</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Blog</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Episodes</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Subscribe</a></li>
+            </ul>
+        </div>
+
+        <div class="right-links">
+            <ul class="footer-ul right-ul-1">
+                <li class="left-list-items list-heading"><strong>Useful Links</strong></li>
+                <li class="list-items"><a href="#" class="footer-links">Home</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Blog</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Episodes</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Subscribe</a></li>
+            </ul>
+
+            <ul class="footer-ul right-ul-2">
+                <li class="left-list-items list-heading"><strong>Info</strong></li>
+                <li class="list-items"><a href="#" class="footer-links">Home</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Blog</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Episodes</a></li>
+                <li class="list-items"><a href="#" class="footer-links">Subscribe</a></li>
+            </ul>
+        </div>
+
+    </div>
+    </footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
