@@ -1,3 +1,7 @@
+// -------------------> display: none; the nav ul on clicing the search btn
+// -------------------> nav closes automatically (on phone view) when any link is clicked
+
+// const header = document.querySelector(".header");
 const menuToggle = document.getElementById("menu-toggle-btn");
 const navbar = document.querySelector(".navbar");
 const closeBtn = document.getElementById("close-btn");
@@ -15,6 +19,8 @@ const main = document.querySelector(".main");
 const interviewSection = document.querySelector(".interview-section");
 const footer = document.querySelector(".footer");
 
+const navLinks = document.querySelectorAll(".nav-links");
+
 menuToggle.addEventListener("click", function(){
     navbar.classList.add("visible");
     closeBtn.classList.add("visible");
@@ -27,10 +33,59 @@ closeBtn.addEventListener("click", function(){
     
     setTimeout(() => {
         topSearchBtn.classList.remove("invisible");
-        
     }, 350);
     
-    // $(phoneSearchBtn).fadeIn(150);
+    setTimeout(() => {
+        $(input).fadeOut(50);
+        $(phoneSearchBtn).fadeIn(150);
+    }, 350);
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function(){
+        navbar.classList.remove("visible");
+        closeBtn.classList.remove("visible");
+        
+        setTimeout(() => {
+            topSearchBtn.classList.remove("invisible");
+            
+        }, 350);
+        
+        setTimeout(() => {
+            $(input).fadeOut(50);
+            $(phoneSearchBtn).fadeIn(150);
+        }, 350);
+    });
+    
+});
+
+img.addEventListener("click", function(){
+    navbar.classList.remove("visible");
+    closeBtn.classList.remove("visible");
+
+    setTimeout(() => {
+        topSearchBtn.classList.remove("invisible");
+    }, 550);
+
+    setTimeout(() => {
+        $(input).fadeOut(50);
+        $(phoneSearchBtn).fadeIn(150);
+    }, 550);
+    
+    // ------------- DISAPPEAR SEARCH INPUT --------------------
+    $(input).animate({width: "0"}).fadeOut(50);
+
+    setTimeout(() => {
+        
+        navLinks.forEach((link) => {
+            link.style.display = "block";
+        });
+        
+    }, 350);
+
+    setTimeout(() => {
+        $(phoneSearchBtn).fadeIn(100);
+    }, 500);
 });
 
 main.addEventListener("click", function(){
@@ -43,12 +98,6 @@ interviewSection.addEventListener("click", function(){
 
 footer.addEventListener("click", function(){
     navbar.classList.remove("visible");
-});
-
-img.addEventListener("click", function(){
-    navbar.classList.remove("visible");
-    closeBtn.classList.remove("visible");
-    topSearchBtn.classList.remove("invisible");
 });
 
 blog.addEventListener("click", function(){
@@ -64,25 +113,80 @@ podcast.addEventListener("click", function(){
 });
 
 phoneSearchBtn.addEventListener("click", function(){
-    console.log("Clicked");
+    // console.log("Clicked");
     // phoneSearchBtn.animate.fadeOut(200);
 
-    setTimeout(() => {
-        $(input).addClass("visible").animate({width: "+=85%"});
+    const width = 575;
+
+    if(window.innerWidth > width){
+
+        // $(input).css("left", "-35vw");
+
+        setTimeout(() => {
+            $(input).addClass("visible").fadeIn(50).animate({width: "53vw"});
+        }, 150);
+
+        // ******************** NAVLINKS display:none; ON SEARCH BTN CODE code **********************
+
+        setTimeout(() => {
+            navLinks.forEach((link) => {
+                link.style.display = "none";
+            });
+
+        }, 300);
+
+    }else{
         
-    }, 150);
-    $(phoneSearchBtn).fadeOut(150);
+        setTimeout(() => {
+            $(input).addClass("visible").fadeIn(50).animate({width: "85%"});
+            
+        }, 150);
+    }
     
+    $(phoneSearchBtn).fadeOut(150);
+
 });
 
 topSearchBtn.addEventListener("click", function(){
-    console.log("Clicked");
-    // phoneSearchBtn.animate.fadeOut(200);
+    // console.log("Clicked");
+    // // phoneSearchBtn.animate.fadeOut(200);
 
-    setTimeout(() => {
-        $(input).addClass("visible").animate({width: "+=85%"});
+    // setTimeout(() => {
+    //     $(input).addClass("visible").fadeIn(150).animate({width: "+=85%"});
         
-    }, 150);
-    $(phoneSearchBtn).fadeOut(150);
+    // }, 150);
+    // $(phoneSearchBtn).fadeOut(150);
+
+    navbar.classList.add("visible");
+    closeBtn.classList.add("visible");
+    topSearchBtn.classList.add("invisible");
+
+    const width = 575;
+
+    if(window.innerWidth > width){
+
+        // $(input).css("left", "-35vw");
+
+        setTimeout(() => {
+            $(input).addClass("visible").fadeIn(50).animate({width: "53vw"});
+        }, 250);
+
+        // ******************** NAVLINKS display:none; ON SEARCH BTN CODE code **********************
+
+        setTimeout(() => {
+            navLinks.forEach((link) => {
+                link.style.display = "none";
+            });
+
+        }, 300);
+
+    }else{
+        
+        setTimeout(() => {
+            $(input).addClass("visible").fadeIn(50).animate({width: "85%"});
+            
+        }, 250);
+    }
     
+    $(phoneSearchBtn).fadeOut(150);
 });
